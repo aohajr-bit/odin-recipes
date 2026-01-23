@@ -18,6 +18,6 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Django system check
-        working-directory: ./firstproject
+        working-directory: ./project
         run: |
           python manage.py check
